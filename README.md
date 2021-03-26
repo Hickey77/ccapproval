@@ -6,11 +6,11 @@ This solution leverages Forms and Flow to add Approval workflow for Company Comm
 # Deployment Guide
 1. Create a Form for users to submit new requests for Company Communicator communication.
   - Form needs to collect Card Title, Card Summary, Image URL, Author, Button Title, Button URL which we pass to Flow for use in Approvals and to create the draft Company Communicator card.
-  - This example also asks submiter to pick department.  My Flow switches off this selection to allow separate approvers for each department
+  - This example also asks submiter to pick department.  This is optional.  My Flow switches off this selection to allow separate approvers for each department
   
   ![image](https://user-images.githubusercontent.com/54556057/112554428-ac4bde80-8d9c-11eb-844f-31cf39edcd63.png)
   
-2. Import the Flow from the Repro or create your own Flow.
+2. Import the Flow from the Repo or create your own Flow.
 
 a. First step is trigger to start Flow when a response to you form has been submitted.  Change this step by picking the form you created in step 1 in the drop down or enter Form ID.
 
