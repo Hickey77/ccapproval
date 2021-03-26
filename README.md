@@ -96,6 +96,11 @@ Here's the Raw JSON:
   "Unknown": 0
 }
 
-8. When the flow is complete, you will have a new draft Company Communicator mesage in the Company Communicator Author tool
+8. When the flow is complete, you will have a new draft Company Communicator mesage in the Company Communicator Author tool.  
+
+Best practice is to have just a few people with the ability to send Company Communications (Operators).
+1. Requesters:  Anyone with Form link can request new company Communications
+2. Approvers:  Flow sends Approval Email and task to designated departmental approver
+3. CC Operator:  Once communication is approved, they send the draft message at specified time.  The flow could also send planner task or reminder to operators
 
 ![image](https://user-images.githubusercontent.com/54556057/112666014-12cf0c00-8e32-11eb-914d-ede0dcf5f52e.png)
