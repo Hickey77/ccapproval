@@ -3,6 +3,8 @@ Company Communicator Approval Workflow
 
 This solution leverages Forms and Flow to add Approval workflow for Company Communicator App Template.  Many organizations require multiple submitters and desire approval of comms before they out.
 
+[This solution is part of the Company Communicator Adoption Kit](https://aka.ms/ccadopt)
+
 # Deployment Guide
 I. Create a Form for users to submit new requests for Company Communicator communication.
   - Form needs to collect Card Title, Card Summary, Image URL, Author, Button Title, Button URL which we pass to Flow for use in Approvals and to create the draft Company Communicator card.
@@ -98,9 +100,9 @@ Here's the Raw JSON:
 
 8. When the flow is complete, you will have a new draft Company Communicator mesage in the Company Communicator Author tool.  
 
+![image](https://user-images.githubusercontent.com/54556057/112666014-12cf0c00-8e32-11eb-914d-ede0dcf5f52e.png)
+
 Best practice is to have just a few people with the ability to send Company Communications (Operators).
 1. Requesters:  Anyone with Form link can request new company Communications
 2. Approvers:  Flow sends Approval Email and task to designated departmental approver
 3. CC Operator:  Once communication is approved, they send the draft message at specified time.  The flow could also send planner task or reminder to operators
-
-![image](https://user-images.githubusercontent.com/54556057/112666014-12cf0c00-8e32-11eb-914d-ede0dcf5f52e.png)
