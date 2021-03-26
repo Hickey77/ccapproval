@@ -95,3 +95,7 @@ Here's the Raw JSON:
   "TotalMessageCount": 0,
   "Unknown": 0
 }
+
+8. When the flow is complete, you will have a new draft Company Communicator mesage in the Company Communicator Author tool
+
+![image](https://user-images.githubusercontent.com/54556057/112666014-12cf0c00-8e32-11eb-914d-ede0dcf5f52e.png)
