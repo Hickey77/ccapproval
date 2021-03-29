@@ -121,3 +121,4 @@ End of deployment.
 This is just a example workflow and can be extended easily.  Here are some ideas:
 - Assign Planner task to operator on send day
 - Use Power Apps instead of Form to request new Communication and enforce businesss logic like link validation or target validation
+- Log all requests to SharePoint list or XLS
