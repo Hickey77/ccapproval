@@ -1,7 +1,7 @@
 # Company Communicator Approval Workflow Solution
 Company Communicator Approval Workflow
 
-This solution leverages Forms and Flow to add Approval workflow for Company Communicator App Template.  Many organizations require multiple submitters and desire approval of comms before they out.
+This solution leverages Microsoft Forms and Power Automate (Flow) to add workflow approval for the Company Communicator App Template.  Many organizations require multiple submitters and desire full approval of communications before they are sent.
 
 [This solution is part of the Company Communicator Adoption Kit](https://aka.ms/ccadopt)
 
