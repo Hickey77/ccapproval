@@ -113,3 +113,9 @@ Here's the JSON to create a new draft message:
 8. When the flow is complete, you will have a new draft Company Communicator mesage in the Company Communicator Author tool.  
 
 ![image](https://user-images.githubusercontent.com/54556057/112666014-12cf0c00-8e32-11eb-914d-ede0dcf5f52e.png)
+
+End of steps.  
+
+This is just a sample example and can be extended here are some ideas:
+-Assign Planner task to operator on send day
+-Use Power Apps instead of Form to request new Communication and enforce businesss logic like link validation or target validation
