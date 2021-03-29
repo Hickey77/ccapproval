@@ -116,6 +116,6 @@ Here's the JSON to create a new draft message:
 
 End of steps.  
 
-This is just a sample example and can be extended here are some ideas:
--Assign Planner task to operator on send day
--Use Power Apps instead of Form to request new Communication and enforce businesss logic like link validation or target validation
+This is just a example workflow and can be extended easily.  Here are some ideas:
+- Assign Planner task to operator on send day
+- Use Power Apps instead of Form to request new Communication and enforce businesss logic like link validation or target validation
