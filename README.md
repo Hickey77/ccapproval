@@ -114,7 +114,7 @@ Here's the JSON to create a new draft message:
 
 ![image](https://user-images.githubusercontent.com/54556057/112666014-12cf0c00-8e32-11eb-914d-ede0dcf5f52e.png)
 
-End of steps.  
+End of deployment.  
 
 This is just a example workflow and can be extended easily.  Here are some ideas:
 - Assign Planner task to operator on send day
