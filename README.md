@@ -67,6 +67,8 @@ Title: @{body('Get_response_details')?['r77821ae347f240b7a180372e960f2f33']}
 
 The flow will send approval Email to user(s) in VAR_Approver with a preview of the Communications.  Approvers can approve or reject.
 
+![image](https://user-images.githubusercontent.com/54556057/112851761-48b20180-9079-11eb-9edf-193e99d458c8.png)
+
 6. Next step is conditional based on Approval by VAR_Approvers:
 
 If not Approved - send email rejection to responder and approver - End of Flow
