@@ -65,9 +65,9 @@ Title: @{body('Get_response_details')?['r77821ae347f240b7a180372e960f2f33']}
 
 ![image](https://user-images.githubusercontent.com/54556057/112848649-4c905480-9076-11eb-8179-f42e5315c096.png)
 
-The flow will send approval Email to user(s) in VAR_Approver
+The flow will send approval Email to user(s) in VAR_Approver with a preview of the Communications.  Approvers can approve or reject.
 
-6. Next step is conditional based on Approval by VAR_Approvers - once approved the flow will continue
+6. Next step is conditional based on Approval by VAR_Approvers:
 
 If not Approved - send email rejection to responder and approver - End of Flow
 
@@ -75,7 +75,11 @@ If Approved - Send Approval email and insert Entity into Company Communicator Az
 
 ![image](https://user-images.githubusercontent.com/54556057/112665506-845a8a80-8e31-11eb-8d3d-ea5b79167ed6.png)
 
-7. This is where the magic happens, and the Flow creates a draft Company Communicator Message
+7. This is where the Flow creates a draft Company Communicator Message by writing directly to Azure Storage
+
+![image](https://user-images.githubusercontent.com/54556057/112849421-0b4c7480-9077-11eb-9e0b-d9e6bdc24fff.png)
+
+You will need to make a connection in Flow to the Azure Storage account used by Company Communicator.  Enter name for conenction and Azure Storage Account name and Key (get these from Azure | Sorage Account | Access keys)
 
 ![image](https://user-images.githubusercontent.com/54556057/112664223-1cf00b00-8e30-11eb-970a-76dc3442eb4d.png)
 
