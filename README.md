@@ -5,6 +5,11 @@ This solution leverages Forms and Flow to add Approval workflow for Company Comm
 
 [This solution is part of the Company Communicator Adoption Kit](https://aka.ms/ccadopt)
 
+Best practice is to have just a few people with the ability to send Company Communications (Operators).
+1. Requesters:  Anyone with Form link can request new company Communications
+2. Approvers:  Flow sends Approval Email and task to designated departmental approver
+3. CC Operator:  Once communication is approved, they send the draft message at specified time.  The flow could also send planner task or reminder to operators
+
 # Deployment Guide
 I. Create a Form for users to submit new requests for Company Communicator communication.
   - Form needs to collect Card Title, Card Summary, Image URL, Author, Button Title, Button URL which we pass to Flow for use in Approvals and to create the draft Company Communicator card.
@@ -33,29 +38,32 @@ II. Import the Flow from the Repo or create your own Flow.
 All we do in the switch is set correct approver email address in VAR_Approvers varible based on department choice in field.
 ![image](https://user-images.githubusercontent.com/54556057/112662739-6b9ca580-8e2e-11eb-825c-d2246daf1d94.png)
 
-5. Next flow step starts an approval
+5. Next flow step - Start an approval
 
-Approval type:  Approve/Reject
+Approval type:  Approve/Reject - First to respond
+
+Title:  @{body('Get_response_details')?['responder']} is requesting Approval for Company Communication
 
 Assigned to:  VAR_Approvers
 
-Details:  RESPONDER is requesting Approval for Company Communication
-
-Details:
-
+**Please Approve or Reject request for new Company Communication:**
 Department: @{body('Get_response_details')?['rd30fffe9430d489c8b049e1a1041dd53']}
-Submission Time: @{body('Get_response_details')?['submitDate']}
-**Comms Title: @{body('Get_response_details')?['r77821ae347f240b7a180372e960f2f33']}**
-**Comms Summary: @{body('Get_response_details')?['r9616d930eb274e4b807b9041791d40b8']}**
-**Image: @{body('Get_response_details')?['r15aac592e77541a5967bded12e556709']}**
-**Author: @{body('Get_response_details')?['r88a2fe7978a94a1dafa91cf089d17ae0']}**
-**Button Title: @{body('Get_response_details')?['r96eef560005248d5b1380413165fc962']}**
-**Button URL: @{body('Get_response_details')?['rca92ce26b78c42c6b9a227f201797cb6']}**
-**Date of send**:  @{body('Get_response_details')?['rddc9519b6722446c9b3e4985defef28f']}
+Date: @{body('Get_response_details')?['rddc9519b6722446c9b3e4985defef28f']}
+Title: @{body('Get_response_details')?['r77821ae347f240b7a180372e960f2f33']}
 
-Please Approve or Reject and review draft in CC Author tool
+**Communication Preview:**
 
-![image](https://user-images.githubusercontent.com/54556057/112662946-a56dac00-8e2e-11eb-9020-4cacf806224b.png)
+**@{body('Get_response_details')?['r77821ae347f240b7a180372e960f2f33']}**
+
+![](@{body('Get_response_details')?['r15aac592e77541a5967bded12e556709']})
+
+@{body('Get_response_details')?['r9616d930eb274e4b807b9041791d40b8']}
+
+@{body('Get_response_details')?['r88a2fe7978a94a1dafa91cf089d17ae0']}
+
+[@{body('Get_response_details')?['r96eef560005248d5b1380413165fc962']}](@{body('Get_response_details')?['rca92ce26b78c42c6b9a227f201797cb6']})
+
+![image](https://user-images.githubusercontent.com/54556057/112848649-4c905480-9076-11eb-8179-f42e5315c096.png)
 
 The flow will send approval Email to user(s) in VAR_Approver
 
@@ -101,8 +109,3 @@ Here's the Raw JSON:
 8. When the flow is complete, you will have a new draft Company Communicator mesage in the Company Communicator Author tool.  
 
 ![image](https://user-images.githubusercontent.com/54556057/112666014-12cf0c00-8e32-11eb-914d-ede0dcf5f52e.png)
-
-Best practice is to have just a few people with the ability to send Company Communications (Operators).
-1. Requesters:  Anyone with Form link can request new company Communications
-2. Approvers:  Flow sends Approval Email and task to designated departmental approver
-3. CC Operator:  Once communication is approved, they send the draft message at specified time.  The flow could also send planner task or reminder to operators
