@@ -77,13 +77,11 @@ If Approved - Send Approval email and insert Entity into Company Communicator Az
 
 7. This is where the Flow creates a draft Company Communicator Message by writing directly to Azure Storage
 
+Flow action is Azure Table Storage - Insert Entity. You will need to make a connection to the Azure Storage account used by Company Communicator.  Enter a name for the connection, Azure Storage Account name and Key (get these from Azure | Sorage Account | Access keys)
+
 ![image](https://user-images.githubusercontent.com/54556057/112849421-0b4c7480-9077-11eb-9e0b-d9e6bdc24fff.png)
 
-You will need to make a connection in Flow to the Azure Storage account used by Company Communicator.  Enter name for conenction and Azure Storage Account name and Key (get these from Azure | Sorage Account | Access keys)
-
-![image](https://user-images.githubusercontent.com/54556057/112664223-1cf00b00-8e30-11eb-970a-76dc3442eb4d.png)
-
-Here's the Raw JSON:
+Here's the JSON to create a new draft message:
 {
   "PartitionKey": "DraftNotifications",
   "RowKey": "@{variables('VAR_Rowkey')}",
@@ -109,6 +107,8 @@ Here's the Raw JSON:
   "TotalMessageCount": 0,
   "Unknown": 0
 }
+
+![image](https://user-images.githubusercontent.com/54556057/112664223-1cf00b00-8e30-11eb-970a-76dc3442eb4d.png)
 
 8. When the flow is complete, you will have a new draft Company Communicator mesage in the Company Communicator Author tool.  
 
