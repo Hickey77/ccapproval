@@ -116,9 +116,9 @@ Here's the JSON to create a new draft message:
 
 ![image](https://user-images.githubusercontent.com/54556057/112666014-12cf0c00-8e32-11eb-914d-ede0dcf5f52e.png)
 
-End of deployment.  
+End of deployment.  This is just a example approval workflow and can be extended easily.  
 
-This is just a example workflow and can be extended easily.  Here are some ideas:
+Here are some ideas:
 - Assign Planner task to operator on send day
-- Use Power Apps instead of Form to request new Communication and enforce businesss logic like link validation or target validation
-- Log all requests to SharePoint list or XLS
+- Use Power Apps instead of Forms to request new Communication and enforce businesss logic like link validation or user target validation
+- Log all comms requests to SharePoint list or XLS
