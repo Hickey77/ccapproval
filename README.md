@@ -7,8 +7,8 @@ This solution leverages Microsoft Forms and Power Automate (Flow) to add workflo
 
 Best practice is to have just a few people with the ability to send Company Communications (Operators).
 1. Requesters:  Anyone with Form link can request new company Communications
-2. Approvers:  Flow sends Approval Email and task to designated departmental approver
-3. CC Operator:  Once communication is approved, they send the draft message at specified time.  The flow could also send planner task or reminder to operators
+2. Approvers:  Flow sends Approval to designated departmental approver
+3. CC Operator:  Once communication is approved, send the draft message at specified time.  
 
 # Deployment Guide
 I. Create a Form for users to submit new requests for Company Communicator communication.
